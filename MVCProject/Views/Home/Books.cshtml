@@ -1,5 +1,33 @@
+@model MVCProject.Models.BookModel;
 @{
     ViewData["Title"] = "Böcker";
 }
 
-<h2>Böcker</h2>
+<h2>Lägg till bok</h2>
+
+<form method="post">
+    <label asp-for="Name"></label>
+    <input asp-for="Name">
+    <span asp-validation-for="Name"></span>
+    <br>
+    <label asp-for="Author"></label>
+    <input asp-for="Author">
+    <span asp-validation-for="Author"></span>
+    <br>
+    <label asp-for="Genre"></label>
+    <select asp-for="Genre">
+        <option value="none" selected disabled hidden>Välj genre</option>
+        <option value="Fiction">Fiction</option>
+        <option value="Nonfiction">Nonfiction</option>
+        <option value="Mystery">Mystery</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="Mystery">Mystery</option>
+    </select>
+    <span asp-validation-for="Genre"></span>
+    <br>
+        <label asp-for="Read"></label>
+        <input asp-for="Read"/>
+        <span asp-validation-for="Read"></span>
+    <br>
+    <input type="submit" value="Lägg till kurs">
+</form>
