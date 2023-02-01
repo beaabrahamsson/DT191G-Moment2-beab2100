@@ -5,7 +5,7 @@ namespace MVCProject.Controllers {
         public IActionResult Index() {
             return View();
         }
-
+        [Route("/om")]
         public IActionResult About() {
             return View();
         }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Moment 2 - @ViewData["title"]</title>
+</head>
+<body>
+        <header>
+            <div>
+                <div class="heading">
+                <a class="navbar-brand" href="">Moment 2</a>
+            </div>
+        </div>
+
+        <div class="navMenu">
+            <nav>
+                <ul>
+                    <div class="nav-item">
+                    <li><a href="#">Startsida</a></li>
+                </div>
+                <div class="nav-item">
+                    <li><a href="#">Böcker</a></li>
+                </div>
+                <div class="nav-item">
+                    <li><a href="#">Om sidan</a></li>
+                </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+    <footer>
+    <div class="container">
+            <p>Av Beatrice Abrahamsson - Kontakta mig via e-post: <a href="mailto:beab2100@student.miun.se">beab2100@student.miun.se</a></p>
+        </div>
+    </footer>
+<script src="js/main.js"></script>
+</body>
+</html>
