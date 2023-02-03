@@ -33,8 +33,6 @@ namespace MVCProject.Controllers {
                     System.IO.File.WriteAllText("books.json", JsonConvert.SerializeObject(JsonObj, Formatting.Indented));
 
                     ModelState.Clear();
-
-                    //return RedirectToAction("Index", "Home");
                 }
 
             }
