@@ -5,22 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Moment 2 - @ViewData["title"]</title>
 </head>
 <body>
-        <header>
-            <div>
-                <div class="heading">
-                <a class="navbar-brand" href="">Moment 2</a>
-            </div>
-        </div>
-        <div class="navMenu">
-            <partial name="_NavMenu" />
-        </div>
+    <header>
+        <partial name="_NavMenu" />
     </header>
-    <main>
-        @RenderBody()
-    </main>
+    <div class="content">
+        <main>
+            @RenderBody()
+        </main>
+    </div>
     <footer>
         <partial name="_Footer" />
     </footer>

@@ -12,7 +12,7 @@
     color: #735751;
 }
 
-.navMenu {
+.sidebar {
     margin: 0;
     padding: 0;
     width: 300px;
@@ -20,6 +20,13 @@
     position: absolute;
     height: 100%;
     overflow: auto;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
 }
 
 .navMenu a {
@@ -39,16 +46,24 @@
     text-align: center;
 }
 
+.hamburger {
+    display: none;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-main {
+.content {
     margin-top: 30px;
     margin-left: 350px;
     padding: 1px 16px;
     height: 1000px;
     width: 50%;
+}
+
+.table {
+    overflow-x: auto;
 }
 
 input[type=text] {
@@ -116,4 +131,45 @@ footer {
     background-color: #f5f3ef;
     color: black;
     text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+
+    .sidebar #myLinks {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+    }
+    
+    .navbar-brand {
+        margin: auto;
+    }
+
+    .content {
+        margin-top: 30px;
+        padding: 10px 30px;
+        width: 90%;
+        margin-left: 0px;
+    }
+
+    .form {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .content {
+        margin-top: 30px;
+        margin-left: 350px;
+        padding: 1px 16px;
+        height: 1000px;
+        width: 50%;
+    }
 }

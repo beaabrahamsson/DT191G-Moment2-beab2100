@@ -1,13 +1,25 @@
 <nav>
-    <ul>
-        <div class="nav-item">
-        <li><a asp-controller="Home" asp-action="Index">Startsida</a></li>
+    <div class="heading">
+        <a class="navbar-brand" href="">Moment 2</a>
     </div>
-    <div class="nav-item">
-        <li><a asp-controller="Home" asp-action="Books">Lägg till bok</a></li>
+    <div class="sidebar">
+        <div class="hamburger">
+            <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div id="myLinks">
+            <ul class="navbar-nav">
+                <div class="nav-item">
+                    <li><a asp-controller="Home" asp-action="Index">Startsida</a></li>
+                </div>
+                <div class="nav-item">
+                    <li><a asp-controller="Home" asp-action="Books">Lägg till bok</a></li>
+                </div>
+                <div class="nav-item">
+                    <li><a asp-controller="Home" asp-action="About">Om sidan</a></li>
+                </div>
+            </ul>
+        </div>
     </div>
-    <div class="nav-item">
-        <li><a asp-controller="Home" asp-action="About">Om sidan</a></li>
-    </div>
-    </ul>
 </nav>
