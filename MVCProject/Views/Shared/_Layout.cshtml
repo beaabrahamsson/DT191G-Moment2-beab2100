@@ -14,30 +14,15 @@
                 <a class="navbar-brand" href="">Moment 2</a>
             </div>
         </div>
-
         <div class="navMenu">
-            <nav>
-                <ul>
-                    <div class="nav-item">
-                    <li><a asp-controller="Home" asp-action="Index">Startsida</a></li>
-                </div>
-                <div class="nav-item">
-                    <li><a asp-controller="Home" asp-action="Books">Böcker</a></li>
-                </div>
-                <div class="nav-item">
-                    <li><a asp-controller="Home" asp-action="About">Om sidan</a></li>
-                </div>
-                </ul>
-            </nav>
+            <partial name="_NavMenu" />
         </div>
     </header>
     <main>
         @RenderBody()
     </main>
     <footer>
-    <div class="container">
-            <p>Av Beatrice Abrahamsson - Kontakta mig via e-post: <a href="mailto:beab2100@student.miun.se">beab2100@student.miun.se</a></p>
-        </div>
+        <partial name="_Footer" />
     </footer>
 <script src="js/main.js"></script>
 </body>

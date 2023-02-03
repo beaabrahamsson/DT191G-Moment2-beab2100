@@ -37,7 +37,6 @@
     text-decoration: none;
     border: solid 1px #929292;
     text-align: center;
-    padding: 10px;
 }
 
 body {
@@ -52,15 +51,31 @@ main {
     width: 50%;
 }
 
-input {
-    width: 100px;
+input[type=text] {
+    width: 100%;
     padding: 12px 20px;
     margin-right: 20px;
-    margin-left: 10px;
     box-sizing: border-box;
+    margin-bottom: 20px;
+}
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
-button {
+.checkbox {
+    display: flex;
+    justify-content: flex-start;
+}
+
+input[type=checkbox] {
+    margin-right: 15px;
+}
+
+input[type=submit] {
     background-color: #DDD8D0;
     border: none;
     color: black;
@@ -74,6 +89,7 @@ button {
 
 .form {
     margin-bottom: 100px;
+    width: 50%;
 }
 
 td {

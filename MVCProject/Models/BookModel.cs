@@ -16,7 +16,7 @@ namespace MVCProject.Models {
         public string? Genre {get; set;}
 
         [Required(ErrorMessage = "Ange om läst")]
-        [Display(Name= "Läst?")]
+        [Display(Name= "Har du läst boken?")]
         public bool Read {get; set;}
 
     }

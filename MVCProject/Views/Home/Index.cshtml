@@ -1,5 +1,33 @@
+@model List<MVCProject.Models.BookModel>
 @{
     ViewData["Title"] = "Startsida";
 }
 
-<h2>Startsida</h2>
+<h2>Böcker</h2>
+
+<table class="table">
+        <thead>
+            <tr>
+                <th>Titel</th>
+                <th>Författare</th>
+                <th>Genre</th>
+                <th>Läst</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- loop and print all courses -->
+            @foreach (var book in Model)
+            {
+                <tr>
+                    <td>@book.Name</td>
+                    <td>@book.Author</td>
+                    <td>@book.Genre</td>
+                    @if (@book.Read == true) {
+                        <td>ja</td>
+                        } else {
+                           <td>Nej</td> 
+                        }
+                </tr>
+            }
+        </tbody>
+    </table>

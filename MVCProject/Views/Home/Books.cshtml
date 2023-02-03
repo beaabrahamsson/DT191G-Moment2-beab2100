@@ -5,7 +5,7 @@
 
 <h2>Lägg till bok</h2>
 
-<form method="post">
+<form class="form" method="post">
     <label asp-for="Name"></label>
     <input asp-for="Name">
     <span asp-validation-for="Name"></span>
@@ -25,9 +25,11 @@
     </select>
     <span asp-validation-for="Genre"></span>
     <br>
-        <label asp-for="Read"></label>
+    <div class="checkbox">
         <input asp-for="Read"/>
+        <label asp-for="Read"></label>
         <span asp-validation-for="Read"></span>
+    </div>
     <br>
-    <input type="submit" value="Lägg till kurs">
+    <input type="submit" value="Lägg till bok">
 </form>

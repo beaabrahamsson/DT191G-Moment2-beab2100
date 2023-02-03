@@ -4,5 +4,17 @@
     "Author": "Suzanne Collins",
     "Genre": "Fantasy",
     "Read": true
+  },
+  {
+    "Name": "The Great Gatsby",
+    "Author": "F. Scott Fitzgerald",
+    "Genre": "Fiction",
+    "Read": true
+  },
+  {
+    "Name": "Dödssynden",
+    "Author": "Harper Lee",
+    "Genre": "Fiction",
+    "Read": false
   }
 ]
